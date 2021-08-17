@@ -1,0 +1,135 @@
+
+.page-content {
+	// display: flex;
+	// width: 100%;
+	// height: 100%;
+	// flex-direction: column;
+	// position: fixed;
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+	min-height: 100vh;
+	background-color: #EEEEEE;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.round{
+	border-radius: 5000rpx;
+}
+/* 全局遮罩 */
+.mask {
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	outline: 0;
+	text-align: center;
+	transform: scale(1.185);
+	backface-visibility: hidden;
+	perspective: 200rpx;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease-in-out 0s;
+	// pointer-events: none;//阻止点击事件
+	opacity: 1;
+}
+
+	.page-header {
+		width: 100%;
+		height: 160rpx;
+	}
+
+	.page-footer {
+		width: 100%;
+		height: 160rpx;
+	}
+/* 列表通用样式 */
+.list-view {
+	width:100%;
+	flex:1;
+	// position: fixed;
+	// height: 100vh;
+	// overflow-y: scroll;
+	// box-sizing: border-box;
+	// padding: 85rpx 0 210rpx 0;
+	.list-item{
+		background-color: #FFFFFF;
+	}
+
+	.list-row {
+		background-color: #ffffff;
+		padding: 0rpx 20rpx;
+		
+		.row-item {
+			padding: 20rpx 0;
+			border-bottom: 1rpx solid #f4f4f4;
+		}
+
+		&:last-child .row-item {
+			border: none;
+		}
+
+		.flex-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20rpx 0;
+			white-space: nowrap;
+
+			.col-left {
+				text-align: center;
+			}
+
+			.col-middle {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				padding-left: 20rpx;
+
+				.col-row {
+					padding: 10rpx 0;
+				}
+			}
+
+			.col-right {
+				flex: 1;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				text-align: right;
+				margin-right: 50rpx;
+
+				.col-row {
+					padding: 10rpx 0;
+				}
+
+				&.arrow::after {
+					position: absolute;
+					font-family: cuIcon;
+					display: block;
+					content: "\e6a3";
+					font-size: 14px;
+					color: #8799a3;
+					text-align: center;
+					height: 100%;
+					top: -20rpx;
+					right: -35rpx;
+					transform: translate(50%, 50%);
+				}
+			}
+		}
+	}
+}
