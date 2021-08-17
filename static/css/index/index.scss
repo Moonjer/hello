@@ -1,9 +1,0 @@
-.animated{animation-duration: 1s;animation-fill-mode: both}
-.animated.infinite{animation-iteration-count: infinite}
-.animated.hinge{animation-duration: 2s}
-.bling{animation: glow 1500ms ease-out infinite alternate}
-@keyframes glow{0%{border-color: #a0fff7;box-shadow: 0 0 5px rgb(41, 134, 255), inset 0 0 5px rgb(26, 117, 255), 0 1px 0 #67d1ff}50%{border-color: #ffd8d5;box-shadow: 0 0 5px rgb(255, 101, 127), inset 0 0 5px rgb(255, 40, 30), 0 1px 0 #ffa2a3}100%{border-color: #d8ffdc;box-shadow: 0 0 20px rgb(96, 255, 243), inset 0 0 10px rgb(0, 210, 255), 0 1px 0 #b4fff1}}
-.shake{animation-name: shake;}
-@keyframes shake{0%,100%{transform: translateX(0)}10%,30%,50%,70%,90%{transform: translateX(-10rpx)}20%,40%,60%,80%{transform: translateX(10rpx)}}
-.shake:hover{animation: shake-bounce .5s alternate}
-@keyframes shake-bounce{0%,100%{transform: rotate(0);}25%{transform: rotate(15deg);}50%{transform: rotate(-15deg);}75%{transform: rotate(5deg);}85%{transform: rotate(-5deg);}}
